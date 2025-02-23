@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f6abaa;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #d63447;
+            font-size: 3em;
+        }
+        p {
+            color: #d63447;
+            font-size: 1.5em;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #d63447;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: #ff6f61;
+        }
+        #response {
+            margin-top: 30px;
+            font-size: 2em;
+            color: #d63447;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <h1>Will You Be My Valentine Nandiniii Krishnaaa🎀?</h1>
+    <p>Yoo CS girlie ik we postponed our valentines day idk cringe aano en but i wanted to ask you ya so what's your answer???</p>
+    <div class="buttons">
+        <button onclick="respond('yes')">Yes</button>
+        <button onclick="respond('no')">No</button>
+    </div>
+    <div id="response"></div>
+
+    <script>
+        function respond(answer) {
+            const responseDiv = document.getElementById('response');
+            if (answer === 'yes') {
+                responseDiv.innerHTML = "WOWOWOWOWOW...That's a privilege to be your valentine🎀❤!! ";
+            } else if (answer === 'no') {
+                responseDiv.innerHTML = "Aww,I cosider that as a yesssss...ummaaaaaa😌";
+            }
+        }
+    </script>
+</body>
+</html>
